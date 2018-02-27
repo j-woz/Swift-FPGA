@@ -11,8 +11,7 @@ $ PATH=/home/wozniak/Public/sfw/icc/swift-t/turbine/bin:$PATH
 $ export LD_LIBRARY_PATH=/soft/compilers/intel/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin
 ----
 
-There is a convenience script:
-+
+There is a convenience script: +
 ----
 $ source setup-jlse.sh
 ----
