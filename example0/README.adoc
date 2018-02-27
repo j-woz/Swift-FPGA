@@ -22,3 +22,5 @@ $ swift-t -E 'trace("Hello World");'
 See here for directions:
 
 http://swift-lang.github.io/swift-t/leaf.html#_complete_example_2_simple_c_function
+
+Amazingly, ICC and GCC work together here.
