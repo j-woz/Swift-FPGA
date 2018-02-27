@@ -24,3 +24,19 @@ See here for directions:
 http://swift-lang.github.io/swift-t/leaf.html#_complete_example_2_simple_c_function
 
 Amazingly, ICC and GCC work together here.
+
+== State in leaf functions
+
+State can be initialized by setting a Tcl script that is invoked at package load time.  In this case, it is g.tcl .  This initializes a counter to 0.
+
+Any globals in the C code for the leaf function are retained from call to call.  So we can increment the counter as expected.
+
+----
+$ swift-t -r $PWD test-g-n.swift
+g: 0+5+1=6
+sleeping for 6 seconds...
+g: 5+0+2=7
+sleeping for 7 seconds...
+g: 4+1+3=8
+sleeping for 8 seconds...
+----

@@ -20,3 +20,7 @@ tclsh test-g.tcl
 echo
 echo "TEST-G-SWIFT"
 swift-t -r $PWD test-g-1.swift
+
+echo
+echo "TEST-G-N-SWIFT"
+swift-t -r $PWD test-g-n.swift
